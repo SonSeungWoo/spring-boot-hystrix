@@ -10,3 +10,8 @@ hystrix:
     consumer:
       execution.isolation.thread.timeoutInMilliseconds: 200
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
