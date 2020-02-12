@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+hystrix:
+  command:
+    # 전역설정
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 10000
+    # 특정 commandKey에 대한 설정
+    consumer:
+      execution.isolation.thread.timeoutInMilliseconds: 200
+
